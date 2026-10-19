@@ -1,0 +1,16 @@
+# PlatformIO build output
+.pio/
+
+# VS Code: only the recommended extensions are shared
+.vscode/*
+!.vscode/extensions.json
+
+# WiFi credentials, see src/secrets.example.h
+src/secrets.h
+
+# Host test binaries, captures and traces
+test/test_modem
+test/*.exe
+test/*.csv
+afsk_demod_trace.csv
+*.wav

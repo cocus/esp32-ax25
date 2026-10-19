@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AFSK modem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>AFSK modem</h3>
+
+  <div>
+    scope
+    <select id="n">
+      <option>512</option>
+      <option selected>2048</option>
+      <option>4096</option>
+    </select>
+    samples at 48 kHz
+    <label><input type="checkbox" id="auto" checked> auto-scale</label>
+    <label><input type="checkbox" id="run" checked> run</label>
+    <span id="scope-info"></span>
+  </div>
+  <canvas id="scope" width="1200" height="280"></canvas>
+
+  <pre id="status">loading...</pre>
+
+  <form id="send">
+    <input id="msg" placeholder="text to send as one frame">
+    <button>send</button>
+    <span id="send-result"></span>
+  </form>
+
+  <table id="frames"></table>
+
+  <script src="app.js"></script>
+</body>
+</html>
