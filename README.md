@@ -127,3 +127,10 @@ quantisation. Build it with clang or gcc (gcc also wants `-lm`):
 The replay prints every frame it finds, good or bad, and the trace has the filtered audio,
 tone levels, demod output, bit clock, bit sample points and carrier detect, one row per
 12 kHz sample.
+
+## License
+
+Unless a file's own notices say otherwise, original project code is licensed under the GNU
+General Public License, version 3 or (at your option) any later version; see
+[LICENSE](LICENSE). Third-party and archived material is not relicensed by this notice:
+preserve its existing copyright and license notices and follow its original terms.
